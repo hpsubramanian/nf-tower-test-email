@@ -24,6 +24,7 @@ workflow {
 
 workflow.onComplete {
     sendMail(
+        from: 'informatics@primemedicine.com',
         to: params.email,
         subject: 'Pipeline completed',
         body: 'Test email from Nextflow',
