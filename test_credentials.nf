@@ -8,7 +8,7 @@ process ECHO {
     stdout
 
     """
-    aws s3 cp '${x}' ./
+    aws s3 cp ${x} ./
     """
 }
 
